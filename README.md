@@ -10,7 +10,8 @@ Aplikasi Android yang berjudul *"Cari Jodoh"*
 # List Class
   
 # License
-Under GNU General Public License v3.0.
+Under GNU General Public License v3.0
+
 It would be grateful if u inform us before u download and edit our project
   * fahrul4215@gmail.com
   * admin@iqbalcakep.com
