@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/viewJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="50sp"
+        android:text="Cari Jodoh"
+        android:textStyle="italic|bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/viewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/viewJudul"
+        android:layout_marginStart="10dp"
+        android:text="Username"/>
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:layout_below="@+id/viewUsername"
+        android:layout_alignStart="@id/viewUsername"
+        android:inputType="text"/>
+
+</RelativeLayout>

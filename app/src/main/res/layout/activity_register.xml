@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.iqbalfahrul.kelompok10.carijodoh.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/blank_top">
+    </View>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_judul"
+        android:text="Hallo New Costumer"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/txv_welcome"
+        android:id="@+id/blank_mid">
+
+    </View>
+
+
+    <TextView
+        android:id="@+id/txv_login_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blank_mid"
+        android:text="Masukkan data diri anda"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:id="@+id/linearLayout">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/txt_nama"
+            android:hint="Nama"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txt_username"
+            android:hint="Username"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txt_password"
+            android:hint="password"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:text="Register"
+
+        android:id="@+id/btn_login"
+        android:layout_below="@id/linearLayout"
+        android:onClick="button_login"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/btn_register"
+        android:id="@+id/blank_bottmm">
+
+    </View>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
