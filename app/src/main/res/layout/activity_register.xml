@@ -67,7 +67,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@color/colorPrimary"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:ems="10"
             android:id="@+id/txt_username"
             android:hint="Username"/>
@@ -83,6 +83,36 @@
             android:id="@+id/txt_password"
             android:hint="password"/>
 
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/r_jkl">
+            <RadioButton android:id="@+id/radio_pria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pria"
+                />
+            <RadioButton android:id="@+id/radio_wanita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wanita"
+                />
+        </RadioGroup>
+        <EditText
+            android:id="@+id/txt_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:hint="Alamat"/>
+
     </LinearLayout>
 
     <Button
@@ -92,9 +122,8 @@
         android:textColor="#fff"
         android:text="Register"
 
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_register"
         android:layout_below="@id/linearLayout"
-        android:onClick="button_login"
         />
 
 

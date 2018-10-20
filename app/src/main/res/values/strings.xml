@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Cari Jodoh</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
 </resources>
