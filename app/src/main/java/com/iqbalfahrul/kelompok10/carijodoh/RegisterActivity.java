@@ -41,7 +41,14 @@ public class RegisterActivity extends AppCompatActivity {
                 int selectedId = r1.getCheckedRadioButtonId();
                 rb = (RadioButton) findViewById(selectedId);
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
-                db.execSQL("INSERT INTO user(nama,username,password,jkl,alamat,foto) values('" + t1.getText().toString() + "','" + t2.getText().toString() + "','" + t3.getText().toString() + "','" + t5.getText().toString() + "','" + rb.getText().toString() + "','NULL')");
+                db.execSQL("INSERT INTO user(nama,username,password,jkl,alamat,foto,level)" +
+                        " values('" +
+                        t1.getText().toString() + "','" +
+                        t2.getText().toString() + "','" +
+                        t3.getText().toString() + "','" +
+                        t5.getText().toString() + "','" +
+                        rb.getText().toString() + "',"+
+                        R.drawable.ic_launcher_background+",2)");
                 Toast.makeText(getApplicationContext(), " Berhasil Register", Toast.LENGTH_LONG).show();
                 finish();
             }
