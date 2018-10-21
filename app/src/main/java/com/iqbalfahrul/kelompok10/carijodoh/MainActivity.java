@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = handler.edit();
         editor.putString("username",this.txtUsername.getText().toString());
         editor.putString("password",this.txtPassword.getText().toString());
+        editor.putString("warna","kuning");
         editor.apply();
     }
 
