@@ -46,10 +46,10 @@ public class RegisterActivity extends AppCompatActivity {
                         t1.getText().toString() + "','" +
                         t2.getText().toString() + "','" +
                         t3.getText().toString() + "','" +
+                        rb.getText().toString() + "','" +
                         t5.getText().toString() + "','" +
-                        rb.getText().toString() + "',"+
-                        R.drawable.ic_launcher_background+",2)");
-                Toast.makeText(getApplicationContext(), " Berhasil Register", Toast.LENGTH_LONG).show();
+                        R.drawable.man+ "',2)");
+                Toast.makeText(getApplicationContext(), " Berhasil Register", Toast.LENGTH_SHORT).show();
                 finish();
             }
         });

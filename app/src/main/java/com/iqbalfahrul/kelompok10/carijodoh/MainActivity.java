@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     MyDataHelper dbHelper;
     private CheckBox chkRemember;
     private Button btnLogin;
+    private int id;
     private EditText txtUsername;
     private  EditText txtPassword;
 
@@ -32,24 +33,6 @@ public class MainActivity extends AppCompatActivity {
         this.checkSavedCredentials();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate dari menu; disini akan menambahkan item menu pada Actionbar
-        getMenuInflater().inflate(R.menu.menu, menu);//Memanggil file bernama menu di folder menu
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menu1:
-//                Toast.makeText(getApplicationContext(),"Login Admin",Toast.LENGTH_LONG).show();
-//                Intent intent = new Intent(this.getApplicationContext(),LoginActivity.class);
-//                startActivity(intent);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
 
     private void initComponents(){
         dbHelper = new MyDataHelper(this);
@@ -92,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         if (cursor.getCount() > 0) {
             cursor.moveToPosition(0);
             if (password.equals(cursor.getString(3))){
+                id = cursor.getInt(0);
                 switch (cursor.getInt(7)){
                     case 1 :
                         return 1;

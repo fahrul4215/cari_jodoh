@@ -1,9 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserEditActivity">
+    android:padding="15dp"
+    tools:context="com.iqbalfahrul.kelompok10.carijodoh.MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/blank_top">
+    </View>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/img_judul"
+        android:text="Edit Data Anda"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_centerVertical="true"
+        android:id="@+id/linearLayout">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:id="@+id/Etxt_nama"
+            android:hint="Nama"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/Etxt_username"
+            android:hint="Username"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/Etxt_password"
+            android:hint="password"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/Er_jkl">
+            <RadioButton android:id="@+id/Eradio_pria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pria"
+                />
+            <RadioButton android:id="@+id/Eradio_wanita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wanita"
+                />
+        </RadioGroup>
+        <EditText
+            android:id="@+id/Etxt_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:hint="Alamat"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:text="Edit"
+        android:id="@+id/btn_edit"
+        android:layout_below="@id/linearLayout"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/btn_register"
+        android:id="@+id/blank_bottmm">
+
+    </View>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

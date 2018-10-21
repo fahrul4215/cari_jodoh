@@ -38,9 +38,9 @@ public class MyDataHelper extends SQLiteOpenHelper {
 
     private void insertAdmin(SQLiteDatabase db){
         ContentValues cv = new ContentValues();
-        cv.put(NAMA, "ADMIN");
-        cv.put(USERNAME, "ADMIN");
-        cv.put(PASSWORD, "ADMIN");
+        cv.put(NAMA, "admin");
+        cv.put(USERNAME, "admin");
+        cv.put(PASSWORD, "admin");
         cv.put(JKL, "null");
         cv.put(ALAMAT, "null");
         cv.put(FOTO, "null");
@@ -51,6 +51,7 @@ public class MyDataHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_TABLE);
+        insertAdmin(db);
     }
 
     //melakukan pengupdate an table yang baru
@@ -60,7 +61,7 @@ public class MyDataHelper extends SQLiteOpenHelper {
             db.execSQL(DROP_TABLE);
             db.execSQL(CREATE_TABLE);
 
-            //insert admin
+
             insertAdmin(db);
         }
     }
