@@ -19,7 +19,8 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".UserDashboardActivity" />
         <activity android:name=".AdminDashboardActivity" />
-        <activity android:name=".UserEditActivity"></activity>
+        <activity android:name=".UserEditActivity" />
+        <activity android:name=".DetailUser"></activity>
     </application>
 
 </manifest>
