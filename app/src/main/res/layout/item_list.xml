@@ -15,6 +15,7 @@
             android:textSize="17sp"
             android:layout_alignParentBottom="true"
             android:padding="10dp"
-            android:background="@color/colorAgakTransparan"/>
+            android:background="@color/colorAgakTransparan"
+            android:textColor="#fff"/>
 
 </RelativeLayout>
