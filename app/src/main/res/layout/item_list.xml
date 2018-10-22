@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -18,4 +19,26 @@
             android:background="@color/colorAgakTransparan"
             android:textColor="#fff"/>
 
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@mipmap/carijodoh"
+    android:padding="10dp"
+    android:id="@+id/parentView">
+
+        <TextView
+            android:id="@+id/viewNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="17sp"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:background="@color/colorAgakTransparan"
+            android:textColor="#fff"/>
+
+>>>>>>> 2dd560258fe2ae046a40ea9b52785718402e020d
 </RelativeLayout>
